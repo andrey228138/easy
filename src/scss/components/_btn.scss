@@ -1,0 +1,61 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  font-family: $font;
+  user-select: none;
+  text-align: center;
+  transition: background-color .3s;
+  cursor: pointer;
+  gap: 4px;
+  border-radius: 8px;
+  @include Body-Large-Bold;
+  transition: 0.24s;
+  
+  &-s {
+    padding: 4.5px 16px;
+  }
+
+  &-m {
+    padding: 8.5px 16px;
+  }
+
+  &-l {
+    padding: 16.5px 20px;
+  }
+
+  &--default {
+    background-color: white;
+    color: $richBlack;
+
+    &:hover {
+      background-color: $seashell;
+      color: $sherpaBlue;
+    }
+
+    &:active {
+      background-color: $frenchGrey;
+      color: $richBlack;
+    }
+
+    &:disabled {
+      background-color: white;
+      color: $frenchGrey;
+    }
+  }
+
+  &--primary {}
+
+  &--secondary {}
+
+  &--dark {}
+
+  &--accent {}
+
+  &--payroll {}
+
+  &--connect {}
+
+  &--invoice {}
+}

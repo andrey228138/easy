@@ -1,0 +1,25 @@
+.nav {
+
+  &__list {
+    display: flex;
+    gap: 12px;
+
+    li {
+      display: flex;
+      height: fit-content;
+    }
+
+    span {
+      display: flex;
+      padding: 8px 12px;
+      cursor: pointer;
+
+      @include Body-Large-Bold
+    }
+
+    a {
+      color: $eagle;
+      @include Heading-Small
+    }
+  }
+}

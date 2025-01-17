@@ -1,0 +1,83 @@
+@mixin Promo-xLarge {
+    font-weight: 400;
+    font-size: 88px;
+    line-height: 88px;
+}
+
+@mixin Promo-Large {
+    font-family: 400;
+    font-size: 72px;
+    line-height: 72px;
+}
+
+@mixin Promo-Standard {
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+}
+
+@mixin Promo-Small {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+@mixin Promo-xSmall {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+@mixin Heading-Large {
+    font-family: 400;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+@mixin Heading-Standard {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+@mixin Heading-Small {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+@mixin Heading-xSmall {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+@mixin Body-xLarge-Bold {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+@mixin Body-xLarge-Medium {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+@mixin Body-xLarge-Regular {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+@mixin Body-Large-Bold {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+@mixin BodyLargeMedium {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+}

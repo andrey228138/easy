@@ -1,0 +1,21 @@
+.header {
+    padding: 12px 0;
+
+    &__nav {
+        display: flex;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 8px;
+
+        button {
+            display: flex;
+        }
+    }
+}
