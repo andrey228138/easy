@@ -1,8 +1,13 @@
 .footer {
     margin-bottom: 24px;
-    background-color: $honeydew;
+   
     border-radius: 6px;
+  
+    &__wrapper{
+        background-color: $honeydew;
     padding: 32px;
+    border-radius: 10px;
+    }
     .footer-info {
         display: flex;
         justify-content: space-between;
@@ -117,7 +122,10 @@
         flex-wrap: wrap;
         gap: 16px;
         img {
-            min-width: 40px;
+ min-width: 10px;
+            padding: 14px;
+            border-radius: 10px;
+            background: $pixieGreen;
         }
         ul {
             display: flex;

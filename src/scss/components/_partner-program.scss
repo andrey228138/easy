@@ -30,7 +30,13 @@
         font-weight: 700;
         display: none;
     }
-    &__title {
+
+&__desctop{
+    @include Promo-Standard;
+    font-weight: 700;
+}   
+
+ &__title {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -73,6 +79,12 @@
             }
           }
     }
+    @include media-down(lg){
+        &__desctop{
+            @include Promo-Small;
+            font-weight: 700;
+        }   
+    }
     @include media-down(md){
         &__title{
             display: flex;
@@ -96,6 +108,7 @@
         }
         
       }
+
     p {
         z-index: 3;
         margin-top: 32px;
