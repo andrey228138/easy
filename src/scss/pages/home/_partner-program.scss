@@ -1,0 +1,108 @@
+.partner-program {
+    padding-top: 200px;
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 48px;
+    }
+    &__gradient {
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 10px;
+    }
+.title{
+    display: flex;
+    gap: 24px;
+    z-index: 2;
+    padding-bottom: 38px;
+    h2{
+        @include Promo-Standard;
+    }
+    &__title-mbl{
+        display: none;
+    }
+    div{
+        position: relative;
+       width: 161px;
+        height: 56px;
+        img{
+            position: absolute;
+            top: -180px;
+            left: -50px;
+            max-width: 308px;
+        }
+    }
+    @include media-down(lg){
+h2{
+    @include Promo-Small; 
+}
+    }
+    @include media-down (md){
+        align-items: center;
+        flex-direction: column;
+div{
+    width: 162px;
+    height: 36px;
+    padding-bottom: 32px;
+    img{
+        width: 250px;
+left: -20px;
+top: -185px;
+    }
+}
+&__desctop{
+    display: none;
+}
+&__title-mbl{
+    display: flex;
+
+   text-align: center;
+}
+    }
+    @include media-down (sm){
+        align-items: center;
+        flex-direction: column;
+h2{
+    @include Promo-xxSmall;   
+}
+div{
+    img{
+        width: 177px;
+        top: -110px;
+        left: 10px;
+    }
+}
+    }
+}
+p{
+    z-index: 2;
+    @include BodyLargeMedium;
+    max-width: 544px;
+    text-align: center;
+    padding-bottom: 24px;
+}
+button{
+    z-index: 2;
+    color: $honeydew;
+    @include Body-Large-Bold;
+    padding: 16px 20px;
+    background-color: $richBlack;
+    border-radius: 8px;
+    @include media-down (md){
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+}

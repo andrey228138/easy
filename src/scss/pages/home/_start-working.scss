@@ -1,0 +1,104 @@
+.start-working{
+    &__wrapper{
+        display: flex;
+justify-content: center  ;
+flex-direction: column
+}
+    h2{
+     
+        @include Promo-Standard;
+        font-weight: 700;
+ margin: 0 auto;
+    }
+    ul{
+        display: flex;
+        gap: 16px;
+        margin-top: 48px;
+        li{
+            max-width: 522px;
+            min-width: 453px;
+            max-height: 480px;
+            min-height: 453px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background: $richBlack;
+z-index: 0;
+border-radius: 20px;
+padding: 32px;
+color: $honeydew;
+p{
+    padding-top: 8px;
+    @include BodyLargeMedium;
+}
+h2{
+    padding-top: 24px;
+    @include Heading-Large;
+}
+img{
+  object-fit: cover;
+}
+        }
+        @include  media-down(sm){
+         li{
+            max-width: 522px;
+            min-width: 323px;
+            max-height: 480px;
+            min-height: 440px;
+         }   
+        }
+     
+    }
+
+    &__line-product {
+        position: relative;
+        width: 100%;
+        background-color: $sherpaBlue;
+        height: 6px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    &__line-product::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: $deepAqua;
+    }
+    
+ li:nth-child(1) &__line-product::before {
+        width: 100%;
+    }
+  li:nth-child(2) &__line-product::before {
+        width: 45%;
+    }
+    li:nth-child(3) &__line-product::before {
+        width: 1px;
+    }
+    &__img{
+        position: relative;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        button{
+            padding: 16px 0px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: $aquaGreen;
+            border-radius: 8px;
+            @include Body-Large-Bold;
+            z-index: 1;
+        }
+
+    }
+    &__countries{
+        position: absolute;
+        top: -178px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+}
